@@ -1,0 +1,83 @@
+.header__section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 3rem;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.18rem;
+    font-weight: 400;
+}
+.app__logo{
+    width: 135px;
+}
+.menu__icon{
+    width: 38px;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+.nav__list li a{
+    text-decoration: none;
+    color: #1c1c1c;
+    padding-bottom: 0.2rem;
+}
+.nav__list li a:hover{
+    border-bottom: 1px solid #1c1c1c;
+}
+.profile__btn{
+    display: flex;
+    gap: 1rem;
+}
+.login__btn, .getstarted__btn{
+    font-size: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.login__btn{
+    border: 1px solid #1c1c1c;
+    background-color: #ffffff;
+    padding: 0.6rem 0.8rem;
+    font-weight: 500;
+}
+.login__btn:hover{
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+.getstarted__btn{
+    border: none;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 0.6rem 0.95rem;
+    font-weight: 500;
+}
+.menu__icon{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .header__section{
+        padding: 0.8rem 1rem;
+    }
+    .nav__bar{
+        display: none;
+    }
+    .login__btn{
+        display: none;
+    }
+    .menu__icon{
+        display: block;
+    }
+    .getstarted__btn{
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    
+}
