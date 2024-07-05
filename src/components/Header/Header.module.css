@@ -3,12 +3,12 @@
     justify-content: space-between;
     padding: 0.8rem 3rem;
     align-items: center;
-    font-family: "Inter", sans-serif;
-    font-size: 1.18rem;
-    font-weight: 400;
+    font-family: var(--home--font);
+    font-size: 1.17rem;
+    font-weight:500;
 }
 .app__logo{
-    width: 135px;
+    width: 133px;
 }
 .menu__icon{
     width: 38px;
@@ -22,48 +22,54 @@
 .nav__list li a{
     text-decoration: none;
     color: #1c1c1c;
-    padding-bottom: 0.2rem;
+    padding-bottom: 0.5rem;
+    transition: 0.3s all ease-in-out;
 }
-.nav__list li a:hover{
-    border-bottom: 1px solid #1c1c1c;
+.nav__list li a:after{
+    display: block;
+    content: '';
+    border-bottom: solid 1px #1c1c1c;
+    transform: scaleX(0);
+    transition: transform 150ms ease-in-out;
 }
+.nav__list li a:hover::after {
+    transform: scaleX(1);
+  }
 .profile__btn{
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .login__btn, .getstarted__btn{
     font-size: 1rem;
-    border-radius: 8px;
+    font-family: var(--home--font);
+    letter-spacing: 0.001rem;
     font-weight: 500;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .login__btn{
     border: 1px solid #1c1c1c;
     background-color: #ffffff;
     padding: 0.6rem 0.8rem;
-    font-weight: 500;
 }
 .login__btn:hover{
-    background-color: #1c1c1c;
-    color: #ffffff;
+    background-color: #e4e4e28b;
 }
 .getstarted__btn{
     border: none;
     background-color: #1c1c1c;
     color: #ffffff;
     padding: 0.6rem 0.95rem;
-    font-weight: 500;
+}
+.getstarted__btn:hover{
+    background-color: #1c1c1ccc;
 }
 .menu__icon{
     display: none;
 }
 @media screen and (max-width: 800px) {
     .header__section{
-        padding: 0.8rem 1rem;
+        padding: 0.4rem 1rem;
     }
     .nav__bar{
         display: none;
@@ -75,8 +81,9 @@
         display: block;
     }
     .getstarted__btn{
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
+        font-size: 0.88rem;
+        padding: 0.4rem 0.7rem;
+        display: none;
     }
 
     
