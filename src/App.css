@@ -9,9 +9,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+:root {
     --home--font: "Manrope", sans-serif;
 }
-body{
-    min-height: 100vh;
+body {
+    min-height: 200vh;
+    font-family: var(--home--font);
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }

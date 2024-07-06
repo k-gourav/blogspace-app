@@ -3,15 +3,22 @@
     justify-content: space-between;
     padding: 0.8rem 3rem;
     align-items: center;
-    font-family: var(--home--font);
-    font-size: 1.17rem;
+    font-size: 1.15rem;
     font-weight:500;
+    background-color: #ffffff3f;
+    position: sticky;
+    top: 0;
 }
 .app__logo{
-    width: 133px;
+    width: 130px;
 }
 .menu__icon{
-    width: 38px;
+    width: 25px;
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    gap: 5.5rem;
 }
 .nav__list{
     display: flex;
@@ -23,14 +30,13 @@
     text-decoration: none;
     color: #1c1c1c;
     padding-bottom: 0.5rem;
-    transition: 0.3s all ease-in-out;
 }
 .nav__list li a:after{
     display: block;
     content: '';
     border-bottom: solid 1px #1c1c1c;
     transform: scaleX(0);
-    transition: transform 150ms ease-in-out;
+    transition: transform 250ms ease-in-out;
 }
 .nav__list li a:hover::after {
     transform: scaleX(1);
@@ -54,6 +60,7 @@
 }
 .login__btn:hover{
     background-color: #e4e4e28b;
+    border-radius: 8px;
 }
 .getstarted__btn{
     border: none;
@@ -63,11 +70,17 @@
 }
 .getstarted__btn:hover{
     background-color: #1c1c1ccc;
+    border-radius: 8px;
 }
 .menu__icon{
     display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+    .login__btn{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
     .header__section{
         padding: 0.4rem 1rem;
     }
@@ -75,16 +88,14 @@
         display: none;
     }
     .login__btn{
-        display: none;
+        display: block;
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
     }
     .menu__icon{
         display: block;
     }
     .getstarted__btn{
-        font-size: 0.88rem;
-        padding: 0.4rem 0.7rem;
         display: none;
     }
-
-    
 }
