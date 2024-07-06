@@ -13,7 +13,7 @@
     --home--font: "Manrope", sans-serif;
 }
 body {
-    min-height: 200vh;
+    min-height: 100vh;
     font-family: var(--home--font);
 }
 ::-webkit-scrollbar {

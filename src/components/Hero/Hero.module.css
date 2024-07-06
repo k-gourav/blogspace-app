@@ -1,0 +1,39 @@
+.hero__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__content{
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+    margin-left: 4rem;
+}
+.hero__banner{
+    width: 46%;
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+}
+.hero__content h2{
+    width: 70%;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.hero__content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(82, 80, 80, 0.944);
+    width: 70%;
+    line-height: 1.5;
+    word-spacing: 0.02rem;
+}
+#cta__btn{
+    width: 32%;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+}
+.banner{
+    width: 100%;
+}

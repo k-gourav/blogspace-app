@@ -30,6 +30,7 @@
     text-decoration: none;
     color: #1c1c1c;
     padding-bottom: 0.5rem;
+    cursor: url(../../assets/images/pointer.svg), auto;
 }
 .nav__list li a:after{
     display: block;
@@ -50,8 +51,9 @@
     font-family: var(--home--font);
     letter-spacing: 0.001rem;
     font-weight: 500;
-    cursor: pointer;
+    cursor: url(../../assets/images/pointer.svg), auto;
     transition: 0.4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 8px;
 }
 .login__btn{
     border: 1px solid #1c1c1c;
@@ -59,18 +61,19 @@
     padding: 0.6rem 0.8rem;
 }
 .login__btn:hover{
-    background-color: #e4e4e28b;
-    border-radius: 8px;
+    /* background-color: #e4e4e28b; */
+    border-radius: 0;
 }
 .getstarted__btn{
     border: none;
     background-color: #1c1c1c;
     color: #ffffff;
     padding: 0.6rem 0.95rem;
+    border-radius: 8px;
 }
 .getstarted__btn:hover{
-    background-color: #1c1c1ccc;
-    border-radius: 8px;
+    /* background-color: #1c1c1ccc; */
+    border-radius: 0;
 }
 .menu__icon{
     display: none;
