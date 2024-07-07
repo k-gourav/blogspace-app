@@ -16,6 +16,8 @@ function Hero() {
                 <img className={style.banner} src={banner} alt="hero-banner-showing-depicts-reading" />
             </div>
         </div>
+
+        
     </main>
   )
 }

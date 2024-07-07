@@ -1,10 +1,10 @@
 .header__section{
     display: flex;
     justify-content: space-between;
-    padding: 0.8rem 3rem;
+    padding: 0.8rem 3.2rem;
     align-items: center;
-    font-size: 1.15rem;
-    font-weight:500;
+    font-size: 1.1rem;
+    font-weight: 500;
     background-color: #ffffff3f;
     position: sticky;
     top: 0;
@@ -13,7 +13,7 @@
     width: 130px;
 }
 .menu__icon{
-    width: 25px;
+    width: 30px;
 }
 .nav__container{
     display: flex;
@@ -78,12 +78,17 @@
 .menu__icon{
     display: none;
 }
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
     .login__btn{
         display: none;
     }
-}
-@media screen and (max-width: 900px) {
+    .header__section{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+} */
+@media screen and (max-width: 1100px) {
     .header__section{
         padding: 0.4rem 1rem;
     }
@@ -92,7 +97,7 @@
     }
     .login__btn{
         display: block;
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0.4rem 0.6rem;
     }
     .menu__icon{
